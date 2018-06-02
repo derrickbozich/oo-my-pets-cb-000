@@ -79,7 +79,7 @@ class Owner
 
 end
 
-# 
+#
 # class Cat
 #   attr_reader :name
 #   attr_accessor :mood
@@ -89,22 +89,21 @@ end
 #     @mood = "nervous"
 #   end
 # end
-# 
-# 
+#
+#
 # dora = Owner.new("Dora")
 # dora.buy_cat("dinah")
 # dora.buy_cat("winifred")
 # dora.pets
-# 
-# 
+#
+#
 # dora.pets.each do |k,v|
 #   v.each {|e| puts e.mood}
 # end
-# 
-# 
+#
+#
 # count = []
 # dora.pets.each do |k,v|
 #   count.push(v.count)
 # end
 # tally = "I have #{count[0]} fish, I have #{count[1]} dog(s) and #{count[2]} cats(s)}"
-
