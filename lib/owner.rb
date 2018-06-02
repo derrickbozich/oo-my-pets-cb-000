@@ -51,12 +51,26 @@ class Owner
   end
 
   def play_with_cats
-    self.pets[:cats].tap { |c| c.mood = "happy"}
+    self.pets[:cats].each { |c| c.mood = "happy"}
   end
 
 end
+
+
+# class Cat
+#   attr_reader :name
+#   attr_accessor :mood
+# 
+#   def initialize(name)
+#     @name = name
+#     @mood = "nervous"
+#   end
+# end
+
 
 dora = Owner.new("Dora")
 dora.buy_cat("dinah")
 dora.pets
 dora.play_with_cats
+
+dinah = dora.pets[:cats][0]
