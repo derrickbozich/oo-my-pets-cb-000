@@ -58,3 +58,5 @@ end
 
 dora = Owner.new("Dora")
 dora.buy_cat("dinah")
+dora.pets
+dora.play_with_cats
