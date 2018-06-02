@@ -50,6 +50,10 @@ class Owner
     fish
   end
 
+  def play_with_cats
+    self.pets[:cats].tap { |c| c.mood = "happy"}
+  end
+
 end
 
 dora = Owner.new("Dora")
