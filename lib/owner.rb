@@ -66,6 +66,7 @@ class Owner
     self.pets.each do |k,v|
       v.each {|e| e.mood = "nervous"}
     end
+    self.pets.clear
   end
 
   # def list_pets
