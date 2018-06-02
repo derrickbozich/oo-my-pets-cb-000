@@ -17,7 +17,22 @@ class Owner
     self.pets.push(pet)
   end
 
-  def buy_cat(name)
+  def buy_pet(species, name)
+    if species == "cat"
+      cat = Cat.new(name)
+      self.pets.push(cat)
+      
+    elsif species == "dog"
+      dog = Dog.new(name)
+      self.pets.push(dog)
+      
+    elsif species == "fish"
+      fish = Fish.new(name)
+      self.pets.push(fish)
+      
+      
+    end
+  
     cat = Cat.new(name)
     self.pets.push(cat)
   end
