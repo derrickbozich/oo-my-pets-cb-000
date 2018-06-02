@@ -26,6 +26,10 @@ class Owner
     @species = "human"
   end
 
+  def say_species
+    @species
+  end
+
 
   def buy_cat(name)
     cat = Cat.new(name)
