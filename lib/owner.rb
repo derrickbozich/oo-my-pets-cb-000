@@ -22,9 +22,10 @@ class Owner
     @@all.count
   end
 
-  def add_pet(pet)
-    self.pets.push(pet)
+  def species
+    @species = "human"
   end
+  
 
   def buy_cat(name)
     cat = Cat.new(name)
