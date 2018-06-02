@@ -74,36 +74,62 @@ class Owner
     self.pets.each do |k,v|
       count.push(v.count)
     end
-    tally = "I have #{count[0]} fish, #{count[1]} dog(s), and #{count[2]} cat(s)."
+    tally = "I have #{count[0]} fish, #{count[2]} dog(s), and #{count[1]} cat(s)."
   end
 
 end
 
-#
+
 # class Cat
 #   attr_reader :name
 #   attr_accessor :mood
-#
+# 
 #   def initialize(name)
 #     @name = name
 #     @mood = "nervous"
 #   end
 # end
-#
-#
+# 
+# class Dog
+#   attr_reader :name
+#   attr_accessor :mood
+# 
+#   def initialize(name)
+#     @name = name
+#     @mood = "nervous"
+#   end
+# end
+# 
+# class Fish
+#   attr_reader :name
+#   attr_accessor :mood
+# 
+#   def initialize(name)
+#     @name = name
+#     @mood = "nervous"
+#   end
+# end
+# 
+# 
+# 
 # dora = Owner.new("Dora")
 # dora.buy_cat("dinah")
 # dora.buy_cat("winifred")
 # dora.pets
-#
-#
-# dora.pets.each do |k,v|
-#   v.each {|e| puts e.mood}
-# end
-#
-#
-# count = []
-# dora.pets.each do |k,v|
-#   count.push(v.count)
-# end
-# tally = "I have #{count[0]} fish, I have #{count[1]} dog(s) and #{count[2]} cats(s)}"
+# 
+# dora = Owner.new("Dora")
+# dora.buy_fish("Bubbles")
+# dora.buy_fish("Nemo")
+# dora.buy_cat("Crookshanks")
+# dora.buy_dog("Fido")
+# dora.buy_dog("Snuffles")
+# dora.buy_dog("Charley")
+# dora.pets
+# 
+# dora.list_pets
+# 
+# dora.pets[:dogs]
+
+
+
+
