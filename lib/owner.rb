@@ -18,6 +18,10 @@ class Owner
     @@all.clear
   end
 
+  def self.count
+    @@all.count
+  end
+
   def add_pet(pet)
     self.pets.push(pet)
   end
