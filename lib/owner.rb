@@ -7,10 +7,11 @@ class Owner
   end
 
   def add_pet(pet)
-    @pets.push(self.pets)
+    self.pets.push(pet)
   end
 
-  def buy_cat
-
+  def buy_cat(name)
+    cat = Cat.new(name)
+    self.pets.push(cat)
   end
 end
