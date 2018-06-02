@@ -54,13 +54,21 @@ class Owner
     self.pets[:cats].each { |c| c.mood = "happy"}
   end
 
+  def walk_dogs
+    self.pets[:dogs].each { |d| d.mood = "happy"}
+  end
+
+  def feed_fish
+    self.pets[:fishes].each { |d| d.mood = "happy"}
+  end
+
 end
 
 
 # class Cat
 #   attr_reader :name
 #   attr_accessor :mood
-# 
+#
 #   def initialize(name)
 #     @name = name
 #     @mood = "nervous"
