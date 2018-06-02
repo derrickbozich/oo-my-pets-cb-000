@@ -74,7 +74,7 @@ class Owner
     self.pets.each do |k,v|
       count.push(v.count)
     end
-    tally = "I have #{count[0]} fish, I have #{count[1]} dog(s) and #{count[2]} cats(s)}"
+    tally = "I have #{count[0]} fish, #{count[1]} dog(s), and #{count[2]} cat(s)."
   end
 
 end
