@@ -15,7 +15,7 @@ class Owner
   end
 
   def self.reset_all
-    self.all = self.all.clear
+    @@all.clear
   end
 
   def add_pet(pet)
