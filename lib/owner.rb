@@ -63,14 +63,14 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each do |group|
-      self.pets[group].each {|pet| pet.mood = "nervous"}
+    self.pets.each do |k,v|
+      v.each {|e| e.mood = "nervous"}
     end
   end
 
-  def list_pets
-    self.pets.each do |species|
-  end
+  # def list_pets
+  #   self.pets.each do |species|
+  # end
 
 end
 
@@ -94,3 +94,7 @@ dora.play_with_cats
 dora.sell_pets
 
 dinah = dora.pets[:cats][0]
+
+dora.pets.each do |k,v| 
+  v.each {|e| puts e.mood}
+end
