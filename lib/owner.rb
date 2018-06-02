@@ -14,6 +14,10 @@ class Owner
 
   end
 
+  def reset_all
+    self.all = self.all.clear
+  end
+
   def add_pet(pet)
     self.pets.push(pet)
   end
