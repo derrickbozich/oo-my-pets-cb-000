@@ -83,40 +83,40 @@ end
 # class Cat
 #   attr_reader :name
 #   attr_accessor :mood
-# 
+#
 #   def initialize(name)
 #     @name = name
 #     @mood = "nervous"
 #   end
 # end
-# 
+#
 # class Dog
 #   attr_reader :name
 #   attr_accessor :mood
-# 
+#
 #   def initialize(name)
 #     @name = name
 #     @mood = "nervous"
 #   end
 # end
-# 
+#
 # class Fish
 #   attr_reader :name
 #   attr_accessor :mood
-# 
+#
 #   def initialize(name)
 #     @name = name
 #     @mood = "nervous"
 #   end
 # end
-# 
-# 
-# 
+#
+#
+#
 # dora = Owner.new("Dora")
 # dora.buy_cat("dinah")
 # dora.buy_cat("winifred")
 # dora.pets
-# 
+#
 # dora = Owner.new("Dora")
 # dora.buy_fish("Bubbles")
 # dora.buy_fish("Nemo")
@@ -125,11 +125,7 @@ end
 # dora.buy_dog("Snuffles")
 # dora.buy_dog("Charley")
 # dora.pets
-# 
+#
 # dora.list_pets
-# 
+#
 # dora.pets[:dogs]
-
-
-
-
