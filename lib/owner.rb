@@ -78,26 +78,27 @@ class Owner
 end
 
 
-# class Cat
-#   attr_reader :name
-#   attr_accessor :mood
-#
-#   def initialize(name)
-#     @name = name
-#     @mood = "nervous"
-#   end
-# end
-#
-#
-# dora = Owner.new("Dora")
-# dora.buy_cat("dinah")
-# dora.buy_cat("winifred")
-# dora.pets
-# dora.play_with_cats
-# dora.sell_pets
-#
-# dinah = dora.pets[:cats][0]
-#
-# dora.pets.each do |k,v|
-#   v.each {|e| puts e.mood}
-# end
+class Cat
+  attr_reader :name
+  attr_accessor :mood
+
+  def initialize(name)
+    @name = name
+    @mood = "nervous"
+  end
+end
+
+
+dora = Owner.new("Dora")
+dora.buy_cat("dinah")
+dora.buy_cat("winifred")
+dora.pets
+
+
+dora.pets.each do |k,v|
+  v.each {|e| puts e.mood}
+end
+
+dora.pets.each do |k,v|
+  "I have #{v.count} #{k.class.downcase}"
+end
