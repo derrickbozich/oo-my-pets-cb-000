@@ -69,9 +69,11 @@ class Owner
     self.pets.clear
   end
 
-  # def list_pets
-  #   self.pets.each do |species|
-  # end
+  def list_pets
+    self.pets.each do |k,v|
+      "I have #{v.count} {#{k.class.downcase}}"
+    end
+  end
 
 end
 
