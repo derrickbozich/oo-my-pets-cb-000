@@ -38,6 +38,13 @@ class Owner
     cat
   end
 
+  def buy_dog(name)
+    dog = Dog.new(name)
+    self.pets[:dogs].push(dog)
+    dog
+  end
+
 end
 
 dora = Owner.new("Dora")
+dora.buy_cat("dinah")
