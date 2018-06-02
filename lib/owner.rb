@@ -68,23 +68,29 @@ class Owner
     end
   end
 
+  def list_pets
+    self.pets.each do |species|
+  end
+
 end
 
 
-# class Cat
-#   attr_reader :name
-#   attr_accessor :mood
-#
-#   def initialize(name)
-#     @name = name
-#     @mood = "nervous"
-#   end
-# end
+class Cat
+  attr_reader :name
+  attr_accessor :mood
+
+  def initialize(name)
+    @name = name
+    @mood = "nervous"
+  end
+end
 
 
 dora = Owner.new("Dora")
 dora.buy_cat("dinah")
+dora.buy_cat("winifred")
 dora.pets
 dora.play_with_cats
+dora.sell_pets
 
 dinah = dora.pets[:cats][0]
