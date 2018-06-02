@@ -70,35 +70,41 @@ class Owner
   end
 
   def list_pets
+    count = []
     self.pets.each do |k,v|
-      "I have #{v.count} {#{k.class.downcase}}"
+      count.push(v.count)
     end
+    tally = "I have #{count[0]} fish, I have #{count[1]} dog(s) and #{count[2]} cats(s)}"
   end
 
 end
 
+# 
+# class Cat
+#   attr_reader :name
+#   attr_accessor :mood
+# 
+#   def initialize(name)
+#     @name = name
+#     @mood = "nervous"
+#   end
+# end
+# 
+# 
+# dora = Owner.new("Dora")
+# dora.buy_cat("dinah")
+# dora.buy_cat("winifred")
+# dora.pets
+# 
+# 
+# dora.pets.each do |k,v|
+#   v.each {|e| puts e.mood}
+# end
+# 
+# 
+# count = []
+# dora.pets.each do |k,v|
+#   count.push(v.count)
+# end
+# tally = "I have #{count[0]} fish, I have #{count[1]} dog(s) and #{count[2]} cats(s)}"
 
-class Cat
-  attr_reader :name
-  attr_accessor :mood
-
-  def initialize(name)
-    @name = name
-    @mood = "nervous"
-  end
-end
-
-
-dora = Owner.new("Dora")
-dora.buy_cat("dinah")
-dora.buy_cat("winifred")
-dora.pets
-
-
-dora.pets.each do |k,v|
-  v.each {|e| puts e.mood}
-end
-
-dora.pets.each do |k,v|
-  "I have #{v.count} #{k.class.downcase}"
-end
