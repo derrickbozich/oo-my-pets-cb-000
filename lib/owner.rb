@@ -3,10 +3,14 @@ class Owner
 
   def initialize(name)
     @name = name
-    @pets = {fishes: [], cats: [], dogs: []}  
+    @pets = {fishes: [], cats: [], dogs: []}
   end
 
   def add_pet(pet)
     @pets.push(self.pets)
+  end
+
+  def buy_cat
+
   end
 end
