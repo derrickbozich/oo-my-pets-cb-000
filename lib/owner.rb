@@ -14,7 +14,7 @@ class Owner
 
   end
 
-  def reset_all
+  def self.reset_all
     self.all = self.all.clear
   end
 
